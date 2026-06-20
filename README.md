@@ -27,13 +27,13 @@ Durante a construção deste caderno temático, foram realizados testes com dife
 
 ### Teste 1: Delimitação de Escopo Temporal e Prevenção de Alucinação
 * **Objetivo:** Extrair um plano financeiro focado em um período específico de tração inicial.
-* **Prompt Estratégico:** *"Com base estritamente nas fontes fornecidas, crie um resumo estruturado sobre como planear financeiramente os primeiros 120 dias de um novo negócio digital de serviços. Foque no controlo do fluxo de caixa e na separação entre finanças pessoais e empresariais."*
+* **Prompt Estratégico:** *"Com base estritamente nas fontes fornecidas, crie um resumo estruturado sobre como planejar financeiramente os primeiros 120 dias de um novo negócio digital de serviços. Foque no controle do fluxo de caixa e na separação entre finanças pessoais e empresariais."*
 * **Dificuldade / Cicatriz:** As fontes originais não possuíam um cronograma exato de "120 dias". Havia o risco de a ferramenta alucinar um cronograma irreal para tentar agradar ao comando.
 * **Resultado e Análise:** A restrição explícita *"com base estritamente"* funcionou perfeitamente. O NotebookLM alertou imediatamente sobre a ausência do cronograma nos PDFs, evitou a alucinação de dados e entregou um roteiro estruturado focado nos conceitos fundamentais aplicáveis ao início da operação (separação de finanças, provisionamento de pró-labore e controle de fluxo de caixa).
 
 ### Teste 2: Limites da Base de Dados e Identificação de Lacunas
 * **Objetivo:** Cruzar conceitos tradicionais de serviços com métricas de negócios digitais.
-* **Prompt Estratégico:** *"Atue como um consultor financeiro sénior focado em negócios digitais. Explique como um profissional que vende serviços (como marketing, design ou desenvolvimento web) deve calcular o preço da sua hora técnica e quais as métricas mais importantes (como CAC e ROI) que deve monitorizar no início. Formate a resposta com tópicos claros."*
+* **Prompt Estratégico:** *"Atue como um consultor financeiro sênior focado em negócios digitais. Explique como um profissional que vende serviços (como marketing, design ou desenvolvimento web) deve calcular o preço da sua hora técnica e quais as métricas mais importantes (como CAC e ROI) que deve monitorar no início. Formate a resposta com tópicos claros."*
 * **Dificuldade / Cicatriz:** Os documentos de base (como os manuais do Sebrae) focam na gestão financeira de serviços tradicionais e não cobrem o detalhamento das métricas de marketing digital solicitadas (CAC e ROI).
 * **Resultado e Análise:** O NotebookLM demonstrou alta transparência e confiabilidade analítica. Ele extraiu a metodologia exata de cálculo de hora técnica (MOD, Ociosidade, Rateio e Markup) diretamente dos PDFs, mas inseriu uma nota explícita avisando que a explicação sobre CAC e ROI provinha de conhecimentos externos à base de documentos, isolando a curadoria técnica do conhecimento geral da IA.
 
@@ -48,9 +48,9 @@ Durante a construção deste caderno temático, foram realizados testes com dife
 <details>
 <summary><strong>📁 Veja todos os prompts e respostas na íntegra</strong></summary>
 
-Para consultar a transcrição original e completa de todos os testes, cenários e respostas extraídas do NotebookLM durante a elaboração deste projeto, acesse o documento de registo:
+Para consultar a transcrição original e completa de todos os testes, cenários e respostas extraídas do NotebookLM durante a elaboração deste projeto, acesse o documento de registro:
 
-👉 **[acessar ao documento historico-prompts-respostas.txt](./historico-prompts-respostas.txt)**
+👉 **[acessar o documento historico-prompts-respostas.txt](./historico-prompts-respostas.txt)**
 
 </details>
 
@@ -102,7 +102,7 @@ Para apoiar futuras revisões, desenhei um conjunto de prompts estratégicos apl
 
 #### 1. Prompt de Ação Prática (Técnicas: Contexto + Instrução Clara + Estrutura de Saída)
 **Objetivo:** Obter um formato de execução diária sem desvios de interpretação.
-> "Atue como um gestor financeiro sénior **[Contexto]**. Com base no método de precificação dos documentos fornecidos, crie um checklist para um profissional digital usar ao elaborar um orçamento **[Instruções Claras]**. Formate a saída como uma lista de caixas de seleção, limitando-se a 8 passos fundamentais **[Restrição e Estrutura de Saída]**."
+> "Atue como um gestor financeiro sênior **[Contexto]**. Com base no método de precificação dos documentos fornecidos, crie um checklist para um profissional digital usar ao elaborar um orçamento **[Instruções Claras]**. Formate a saída como uma lista de caixas de seleção, limitando-se a 8 passos fundamentais **[Restrição e Estrutura de Saída]**."
 
 #### 2. Prompt de Simulação de Cenário (Técnicas: Cadeia de Pensamento / Chain of Thought)
 **Objetivo:** Compreender o impacto matemático forçando a IA a demonstrar a lógica antes de dar a resposta final.
