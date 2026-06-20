@@ -39,7 +39,7 @@ Durante a construção deste caderno temático, foram realizados testes com dife
 
 ### Teste 3: Aplicação Prática de Fórmulas e "Custos Invisíveis"
 * **Objetivo:** Transformar a teoria do cálculo de Markup em um cenário prático e didático de erro de mercado.
-* **Prompt Estratégico:** *"Crie um cenário hipotético curto onde um profissional digital vendeu um serviço de R$ 5.000,00, mas esqueceu de embutir os custos de inadimplência e as taxas do Simples Nacional na precificação. Mostre de forma simples como isso destrói a lucratividade (Markup) dele, usando os conceitos das fontes."*
+* **Prompt Estratégico:** *"Crie um cenário hipotético curto onde um profissional digital vendeu um serviço de R$ 5.000,00, mas esqueceu de embutir os custos de inadimplência e as taxas do Simples Nacional na precificação. Mostre de forma simples como isso compromete a lucratividade (Markup) dele, usando os conceitos das fontes."*
 * **Dificuldade / Cicatriz:** Testar se a IA conseguiria transpor a teoria financeira dos manuais para a estruturação de um *storytelling* lógico, aplicando as porcentagens corretamente.
 * **Resultado e Análise:** A ferramenta obteve sucesso ao aplicar a matemática na prática. Ela demonstrou no "cenário hipotético" que a omissão de 10% de incidências (8% de imposto + 2% de inadimplência) destrói metade do lucro livre esperado de R$ 1.000,00. O teste comprovou que a IA conseguiu não apenas resumir, mas operacionalizar o conhecimento técnico da base.
 
@@ -96,16 +96,16 @@ Abaixo encontra-se o glossário técnico com as definições fundamentais aplica
 | **7. Valuation** | Processo financeiro de modelagem utilizado para estimar o valor real e o preço de mercado de uma empresa, auxiliando no cálculo de retorno para acionistas ou investidores. |
 | **8. Reserva de Emergência** | Parcela de recursos retida pelo negócio e destinada exclusivamente à segurança financeira da operação em períodos de instabilidade econômica ou crises operacionais. |
 
-### 🤖 Prompts Reutilizáveis baseados em Engenharia de Prompt
+### 🤖 Prompts Reutilizáveis baseados em Engenharia de Prompts
 
-Para apoiar futuras revisões, desenhei um conjunto de prompts estratégicos aplicando técnicas formais de Engenharia de Prompt (como *Roleplay, Cadeia de Pensamento* e *Estruturação de Saída*), garantindo que a IA fornece respostas precisas e no formato ideal:
+Para apoiar futuras revisões, desenhei um conjunto de prompts estratégicos baseados em técnicas formais de Engenharia de Prompts (como *Roleplay, Cadeia de Pensamento* e *Estruturação de Saída*), garantindo que a IA forneça respostas precisas e no formato ideal:
 
 #### 1. Prompt de Ação Prática (Técnicas: Contexto + Instrução Clara + Estrutura de Saída)
 **Objetivo:** Obter um formato de execução diária sem desvios de interpretação.
 > "Atue como um gestor financeiro sênior **[Contexto]**. Com base no método de precificação dos documentos fornecidos, crie um checklist para um profissional digital usar ao elaborar um orçamento **[Instruções Claras]**. Formate a saída como uma lista de caixas de seleção, limitando-se a 8 passos fundamentais **[Restrição e Estrutura de Saída]**."
 
 #### 2. Prompt de Simulação de Cenário (Técnicas: Cadeia de Pensamento / Chain of Thought)
-**Objetivo:** Compreender o impacto matemático forçando a IA a demonstrar a lógica antes de dar a resposta final.
+**Objetivo:** Compreender o impacto matemático solicitando que a IA apresente a lógica de cálculo antes da resposta final.
 > "Um profissional vendeu um serviço por R$ 5.000,00, mas esqueceu-se de embutir os 8% de Simples Nacional e 2% de inadimplência no cálculo do Markup **[Conteúdo Principal]**. Explique passo a passo o raciocínio matemático que demonstra como este erro destrói a lucratividade dele **[Cadeia de Pensamento]**. No final, apresente o valor exato do prejuízo **[Repetir Instruções no Final]**."
 
 #### 3. Prompt de Revisão Ativa (Técnicas: Few-Shot Learning + Guardrails)
@@ -115,5 +115,5 @@ Para apoiar futuras revisões, desenhei um conjunto de prompts estratégicos apl
 > Pergunta: [Texto]
 > A) [Opção]
 > B) [Opção]
-> Resposta Certa: [Letra] - Justificação: [Explicação curta] **[Exemplos / Formato de Saída]**.
+> Resposta Certa: [Letra] - Justificativa: [Explicação curta] **[Exemplos / Formato de Saída]**.
 > Não utilize informações de fora do glossário fornecido nestes documentos **[Restrição / Guardrails]**."
