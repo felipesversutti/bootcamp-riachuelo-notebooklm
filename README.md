@@ -1,59 +1,86 @@
+# Planejamento Financeiro Inicial para Negócios Digitais com NotebookLM
+
 ## 🎯 Contexto e Objetivos
 
-O tema escolhido para este caderno temático é o **Planejamento Financeiro Inicial para Negócios Digitais**. 
+O tema escolhido para este caderno temático é o **Planejamento Financeiro Inicial para Negócios Digitais**.
 
-O objetivo principal é utilizar o NotebookLM para criar um guia prático focado na estruturação financeira inicial de um empreendimento. O material visa consolidar diretrizes técnicas de precificação de serviços digitais, gestão do fluxo de caixa e projeção de metas.
+O objetivo principal deste projeto é utilizar o NotebookLM como ferramenta de aprendizagem ativa para organizar, resumir e aplicar conceitos introdutórios de finanças voltados à estruturação inicial de um negócio digital de serviços.
 
-Dessa forma, o projeto demonstra o uso da Inteligência Artificial como ferramenta de aprendizagem ativa, transformando conceitos teóricos densos em um repositório de consulta rápida e aplicável à sustentabilidade de novos negócios.
+O material busca consolidar diretrizes técnicas sobre precificação de serviços digitais, controle do fluxo de caixa, separação entre finanças pessoais e empresariais, definição de pró-labore, capital de giro e planejamento financeiro inicial.
+
+Dessa forma, o projeto demonstra como a Inteligência Artificial pode apoiar o estudo de temas técnicos por meio da curadoria de fontes confiáveis, elaboração de perguntas estratégicas, análise crítica das respostas e organização do conhecimento em um miniguia prático de revisão.
 
 ## 📚 Curadoria de Fontes
 
-Para compor a base de conhecimento do NotebookLM e garantir a precisão técnica das informações geradas, foram selecionadas 5 fontes abertas de instituições de autoridade no ecossistema empreendedor e de inovação. Os documentos originais em PDF estão disponíveis diretamente neste repositório para consulta:
+Para compor a base de conhecimento do NotebookLM e garantir maior precisão técnica nas respostas geradas, foram selecionadas 5 fontes abertas de instituições reconhecidas no ecossistema empreendedor, financeiro e de inovação.
 
-1. **[Cartilha do Microempreendedor Individual - MEI (Sebrae)](./docs/cartilha-mei-financas-sebrae.pdf)** 
+Os documentos originais em PDF estão disponíveis diretamente neste repositório para consulta:
 
-2. **[Financiando o Crescimento das Scale-ups (Endeavor Brasil)](./docs/financiamento-crescimento-scaleups-endeavor.pdf)** 
+1. **[Cartilha do Microempreendedor Individual - MEI (Sebrae)](./docs/cartilha-mei-financas-sebrae.pdf)**
 
-3. **[E-Book: Como Formar Preço de Serviços (Sebrae)](./docs/ebook-formacao-preco-servicos-sebrae.pdf)** 
+2. **[Financiando o Crescimento das Scale-ups (Endeavor Brasil)](./docs/financiamento-crescimento-scaleups-endeavor.pdf)**
 
-4. **[Guia de Planejamento Financeiro (Sebrae)](./docs/guia-planejamento-financeiro-sebrae.pdf)** 
+3. **[E-Book: Como Formar Preço de Serviços (Sebrae)](./docs/ebook-formacao-preco-servicos-sebrae.pdf)**
+
+4. **[Guia de Planejamento Financeiro (Sebrae)](./docs/guia-planejamento-financeiro-sebrae.pdf)**
 
 5. **[Fast Track: Dicas Importantes para Entrar no Mercado Digital (Sebrae)](./docs/fast-track-mercado-digital-sebrae.pdf)**
 
-
 ## 🛠️ Engenharia de Prompts e "Cicatrizes" (Troubleshooting)
 
-Durante a construção deste caderno temático, foram realizados testes com diferentes abordagens de engenharia de prompts no NotebookLM. O objetivo foi avaliar a capacidade da IA de extrair, cruzar e aplicar dados técnicos, documentando os obstáculos e ajustes de escopo (cicatrizes) ao longo do processo.
+Durante a construção deste caderno temático, foram realizados testes com diferentes abordagens de engenharia de prompts no NotebookLM.
+
+O objetivo foi avaliar a capacidade da IA de extrair, cruzar e aplicar informações técnicas a partir das fontes selecionadas, além de documentar as dificuldades encontradas durante o processo. Essas dificuldades foram registradas como "cicatrizes", evidenciando os ajustes necessários para obter respostas mais úteis, precisas e bem referenciadas.
 
 ### Teste 1: Delimitação de Escopo Temporal e Prevenção de Alucinação
+
 * **Objetivo:** Extrair um plano financeiro focado em um período específico de tração inicial.
-* **Prompt Estratégico:** *"Com base estritamente nas fontes fornecidas, crie um resumo estruturado sobre como planejar financeiramente os primeiros 120 dias de um novo negócio digital de serviços. Foque no controle do fluxo de caixa e na separação entre finanças pessoais e empresariais."*
-* **Dificuldade / Cicatriz:** As fontes originais não possuíam um cronograma exato de "120 dias". Havia o risco de a ferramenta alucinar um cronograma irreal para tentar agradar ao comando.
-* **Resultado e Análise:** A restrição explícita *"com base estritamente"* funcionou perfeitamente. O NotebookLM alertou imediatamente sobre a ausência do cronograma nos PDFs, evitou a alucinação de dados e entregou um roteiro estruturado focado nos conceitos fundamentais aplicáveis ao início da operação (separação de finanças, provisionamento de pró-labore e controle de fluxo de caixa).
+
+* **Prompt Estratégico:**  
+*"Com base estritamente nas fontes fornecidas, crie um resumo estruturado sobre como planejar financeiramente os primeiros 120 dias de um novo negócio digital de serviços. Foque no controle do fluxo de caixa e na separação entre finanças pessoais e empresariais."*
+
+* **Dificuldade / Cicatriz:**  
+As fontes originais não possuíam um cronograma exato de "120 dias". Havia o risco de a ferramenta criar um cronograma artificial apenas para atender ao comando do prompt.
+
+* **Resultado e Análise:**  
+A restrição explícita "com base estritamente nas fontes fornecidas" funcionou bem. O NotebookLM indicou a ausência de um cronograma específico nos PDFs e evitou gerar informações sem base documental. Em vez disso, entregou um roteiro estruturado com conceitos fundamentais aplicáveis ao início da operação, como separação entre finanças pessoais e empresariais, provisionamento de pró-labore e controle do fluxo de caixa.
 
 ### Teste 2: Limites da Base de Dados e Identificação de Lacunas
-* **Objetivo:** Cruzar conceitos tradicionais de serviços com métricas de negócios digitais.
-* **Prompt Estratégico:** *"Atue como um consultor financeiro sênior focado em negócios digitais. Explique como um profissional que vende serviços (como marketing, design ou desenvolvimento web) deve calcular o preço da sua hora técnica e quais as métricas mais importantes (como CAC e ROI) que deve monitorar no início. Formate a resposta com tópicos claros."*
-* **Dificuldade / Cicatriz:** Os documentos de base (como os manuais do Sebrae) focam na gestão financeira de serviços tradicionais e não cobrem o detalhamento das métricas de marketing digital solicitadas (CAC e ROI).
-* **Resultado e Análise:** O NotebookLM demonstrou alta transparência e confiabilidade analítica. Ele extraiu a metodologia exata de cálculo de hora técnica (MOD, Ociosidade, Rateio e Markup) diretamente dos PDFs, mas inseriu uma nota explícita avisando que a explicação sobre CAC e ROI provinha de conhecimentos externos à base de documentos, isolando a curadoria técnica do conhecimento geral da IA.
 
-### Teste 3: Aplicação Prática de Fórmulas e "Custos Invisíveis"
-* **Objetivo:** Transformar a teoria do cálculo de Markup em um cenário prático e didático de erro de mercado.
-* **Prompt Estratégico:** *"Crie um cenário hipotético curto onde um profissional digital vendeu um serviço de R$ 5.000,00, mas esqueceu de embutir os custos de inadimplência e as taxas do Simples Nacional na precificação. Mostre de forma simples como isso compromete a lucratividade (Markup) dele, usando os conceitos das fontes."*
-* **Dificuldade / Cicatriz:** Testar se a IA conseguiria transpor a teoria financeira dos manuais para a estruturação de um *storytelling* lógico, aplicando as porcentagens corretamente.
-* **Resultado e Análise:** A ferramenta obteve sucesso ao aplicar a matemática na prática. Ela demonstrou no "cenário hipotético" que a omissão de 10% de incidências (8% de imposto + 2% de inadimplência) destrói metade do lucro livre esperado de R$ 1.000,00. O teste comprovou que a IA conseguiu não apenas resumir, mas operacionalizar o conhecimento técnico da base.
+* **Objetivo:** Cruzar conceitos tradicionais de serviços com métricas de negócios digitais.
+
+* **Prompt Estratégico:**  
+*"Atue como um consultor financeiro sênior focado em negócios digitais. Explique como um profissional que vende serviços, como marketing, design ou desenvolvimento web, deve calcular o preço da sua hora técnica e quais métricas importantes, como CAC e ROI, deve monitorar no início. Formate a resposta com tópicos claros."*
+
+* **Dificuldade / Cicatriz:**  
+Os documentos de base, especialmente os materiais do Sebrae, focam principalmente na gestão financeira de serviços tradicionais. Eles não aprofundam métricas específicas de marketing digital, como CAC e ROI.
+
+* **Resultado e Análise:**  
+O NotebookLM demonstrou transparência ao separar o que estava presente nas fontes do que fazia parte de conhecimento complementar. A ferramenta extraiu dos PDFs a metodologia de cálculo da hora técnica, incluindo MOD, ociosidade, rateio de custos e markup. Ao tratar de CAC e ROI, indicou que essas métricas não estavam suficientemente detalhadas na base documental. Esse comportamento foi positivo, pois ajudou a identificar uma lacuna nas fontes e reforçou a importância da validação crítica das respostas da IA.
+
+### Teste 3: Aplicação Prática de Fórmulas e Custos Invisíveis
+
+* **Objetivo:** Transformar a teoria do cálculo de markup em um cenário prático e didático de erro de precificação.
+
+* **Prompt Estratégico:**  
+*"Crie um cenário hipotético curto onde um profissional digital vendeu um serviço de R$ 5.000,00, mas esqueceu de embutir os custos de inadimplência e as taxas do Simples Nacional na precificação. Mostre de forma simples como isso compromete a lucratividade dele, usando os conceitos das fontes."*
+
+* **Dificuldade / Cicatriz:**  
+O teste buscou verificar se a IA conseguiria transformar conceitos financeiros teóricos em um exemplo prático, aplicando corretamente os percentuais e explicando o impacto da omissão de custos na margem final.
+
+* **Resultado e Análise:**  
+A ferramenta conseguiu aplicar a matemática em um cenário simplificado. No exemplo, a omissão de 10% de incidências, considerando 8% de imposto e 2% de inadimplência, comprometeu metade do lucro livre esperado de R$ 1.000,00. O teste demonstrou que a IA não apenas resumiu os conceitos das fontes, mas também conseguiu operacionalizar o conhecimento em uma situação prática de tomada de decisão.
 
 <br>
 
 <details>
 <summary><strong>📁 Veja todos os prompts e respostas na íntegra</strong></summary>
 
-Para consultar a transcrição original e completa de todos os testes, cenários e respostas extraídas do NotebookLM durante a elaboração deste projeto, acesse o documento de registro:
+Para consultar a transcrição original e completa dos testes, cenários e respostas extraídas do NotebookLM durante a elaboração deste projeto, acesse o documento de registro:
 
 👉 **[acessar o documento historico-prompts-respostas.txt](./historico-prompts-respostas.txt)**
 
 </details>
-
 
 ## 📘 Miniguia de Estudo
 
@@ -62,58 +89,121 @@ Para consultar a transcrição original e completa de todos os testes, cenários
 O gerenciamento financeiro de um novo negócio digital de serviços fundamenta-se em quatro pilares estratégicos extraídos das fontes consolidadas:
 
 #### 1. Separação entre Finanças Pessoais e Empresariais
-* **Diferenciação de Recursos:** A distinção clara entre o patrimônio do indivíduo e os recursos da pessoa jurídica é indispensável para mensurar a real saúde financeira do negócio.
-* **Definição de Pró-labore:** Para mitigar retiradas desordenadas que comprometam o caixa, deve-se fixar o pró-labore (remuneração dos sócios). Este valor é contabilizado formalmente como um custo fixo de pessoal.
+
+* **Diferenciação de Recursos:**  
+A distinção clara entre o patrimônio pessoal do empreendedor e os recursos da empresa é indispensável para mensurar a real saúde financeira do negócio.
+
+* **Definição de Pró-labore:**  
+Para evitar retiradas desordenadas que comprometam o caixa da empresa, deve-se definir um pró-labore, ou seja, uma remuneração fixa para o empreendedor ou sócios. Esse valor deve ser tratado como custo fixo do negócio.
 
 #### 2. Controle e Otimização do Fluxo de Caixa
-* **Operacionalização Diária:** O fluxo de caixa atua como ferramenta preditiva primária, registrando entradas e saídas para antecipar gargalos financeiros e garantir o cumprimento de compromissos.
-* **Alocação de Capital de Giro:** Descompassos momentâneos entre prazos de recebimento e pagamento devem ser cobertos pelo capital de giro, evitando a paralisia operacional.
-* **Estratégia Digital de Recorrência:** No ambiente digital, a adoção de modelos de negócios baseados em assinaturas ou contratos de retenção mensal (pagamentos recorrentes) é recomendada para conferir estabilidade e previsibilidade ao fluxo.
+
+* **Registro de Entradas e Saídas:**  
+O fluxo de caixa atua como uma ferramenta central de controle financeiro, registrando todas as entradas e saídas de dinheiro da empresa.
+
+* **Antecipação de Problemas Financeiros:**  
+Ao acompanhar o fluxo de caixa, o empreendedor consegue prever gargalos financeiros, identificar períodos de maior pressão sobre o caixa e planejar melhor seus compromissos.
+
+* **Capital de Giro:**  
+Descompassos entre prazos de recebimento e pagamento devem ser cobertos por capital de giro, evitando a interrupção das atividades do negócio.
+
+* **Recorrência no Ambiente Digital:**  
+Em negócios digitais de serviços, modelos baseados em contratos mensais, assinaturas ou retenção recorrente podem ajudar a gerar maior previsibilidade financeira.
 
 #### 3. Planejamento Financeiro e Mitigação de Riscos
-* **Levantamento e Metas:** O planejamento inicial exige a consolidação de dados sobre receitas esperadas, custos operacionais e tributos, orientados por metas financeiras mensuráveis.
-* **Reserva de Emergência:** É mandatória a retenção de uma parcela do faturamento para a criação de um fundo de reserva, visando sustentar imprevistos estruturais ou instabilidades mercadológicas.
-* **Acompanhamento Dinâmico:** O plano financeiro deve passar por revisões periódicas comparando os resultados executados com as metas propostas, permitindo correções ágeis de rota.
+
+* **Levantamento de Dados Financeiros:**  
+O planejamento inicial exige a organização de informações sobre receitas esperadas, custos fixos, custos variáveis, tributos e investimentos necessários.
+
+* **Definição de Metas:**  
+Metas financeiras mensuráveis ajudam a orientar decisões sobre faturamento, margem de lucro, precificação e crescimento do negócio.
+
+* **Reserva de Emergência:**  
+A criação de uma reserva financeira é importante para sustentar o negócio em períodos de instabilidade, queda de receita ou surgimento de custos inesperados.
+
+* **Revisão Periódica:**  
+O planejamento financeiro não deve ser tratado como documento estático. Ele precisa ser revisado periodicamente a partir da comparação entre resultados planejados e resultados realizados.
 
 #### 4. Metodologia de Precificação de Serviços Digitais
-* **Custo da Mão de Obra Direta (MOD):** Cálculo do valor da hora técnica estruturado sobre a remuneração e encargos, ponderado pela taxa de ociosidade (horas gastas em gestão e prospecção que não geram receita direta).
-* **Rateio de Custos Fixos:** Incorporação proporcional das despesas estruturais (softwares, internet, ferramentas de design/desenvolvimento) sobre as horas reais de execução do projeto.
-* **Provisão de Custos Invisíveis:** Inclusão compulsória de impostos (ex: Simples Nacional), taxas de intermediários de pagamento e um percentual estimado para inadimplência.
-* **Fórmula do Markup:** Utilização do multiplicador financeiro calculado a partir das incidências e da lucratividade almejada para definir o preço final de venda de forma sustentável.
 
-### 📖 Glossário de Conceitos Aprendidos
+* **Custo da Mão de Obra Direta (MOD):**  
+O cálculo do valor da hora técnica deve considerar a remuneração desejada, encargos, tempo efetivamente disponível para execução e taxa de ociosidade.
 
-Abaixo encontra-se o glossário técnico com as definições fundamentais aplicadas ao gerenciamento financeiro do negócio digital, estruturado a partir dos dados consolidados:
+* **Rateio de Custos Fixos:**  
+Despesas como internet, softwares, ferramentas de design, plataformas digitais, contabilidade e infraestrutura devem ser rateadas sobre os serviços prestados.
+
+* **Custos Invisíveis:**  
+Impostos, taxas de pagamento, inadimplência, retrabalho e tempo de prospecção precisam ser considerados na precificação para evitar perda de margem.
+
+* **Markup:**  
+O markup é um multiplicador aplicado sobre os custos para formar o preço final de venda. Ele deve considerar as incidências de custo e a lucratividade desejada.
+
+## 📖 Glossário de Conceitos Aprendidos
 
 | Termo Financeiro | Definição |
 | :--- | :--- |
-| **1. Fluxo de Caixa** | Ferramenta estratégica utilizada para registrar e controlar todas as entradas e saídas de dinheiro. Permite constatar antecipadamente problemas operacionais que impeçam o cumprimento de compromissos financeiros. |
-| **2. Capital de Giro** | Recursos de curto prazo (ou linhas de pagamento) utilizados para suprir faltas momentâneas de caixa decorrentes de descompassos operacionais, mantendo o negócio em funcionamento. |
-| **3. Markup** | Multiplicador aplicado sobre os custos totais de um serviço para determinar o preço final de venda. Baseia-se na necessidade financeira do negócio para cobrir despesas e garantir a margem de lucro. |
-| **4. Lucratividade** | Indicador percentual (%) que aponta a eficiência operacional do negócio, representando a parcela do faturamento que sobra livre após o pagamento de todos os custos fixos e variáveis. |
-| **5. Custos Fixos** | Gastos recorrentes que ocorrem independentemente da realização de vendas ou do volume de faturamento do período (ex: licenças de software, internet, honorários contábeis e pró-labore). |
-| **6. Incidências de Custo** | Despesas percentuais que ocorrem de forma direta a cada transação realizada. No mercado digital, englobam impostos (Simples Nacional), taxas de gateways de pagamento e a provisão para inadimplência. |
-| **7. Valuation** | Processo financeiro de modelagem utilizado para estimar o valor real e o preço de mercado de uma empresa, auxiliando no cálculo de retorno para acionistas ou investidores. |
-| **8. Reserva de Emergência** | Parcela de recursos retida pelo negócio e destinada exclusivamente à segurança financeira da operação em períodos de instabilidade econômica ou crises operacionais. |
+| **1. Fluxo de Caixa** | Ferramenta utilizada para registrar, controlar e projetar todas as entradas e saídas de dinheiro do negócio. Ajuda a prever dificuldades financeiras e orientar decisões operacionais. |
+| **2. Capital de Giro** | Recursos necessários para manter a empresa funcionando no curto prazo, especialmente quando existe diferença entre o momento de pagar despesas e o momento de receber dos clientes. |
+| **3. Markup** | Multiplicador aplicado sobre os custos totais de um serviço para formar o preço final de venda, considerando despesas, tributos, incidências e margem de lucro desejada. |
+| **4. Lucratividade** | Indicador percentual que mostra quanto sobra do faturamento após o pagamento de custos e despesas. Mede a eficiência financeira da operação. |
+| **5. Custos Fixos** | Gastos recorrentes que permanecem mesmo que a empresa não realize vendas no período, como internet, softwares, contabilidade, aluguel e pró-labore. |
+| **6. Incidências de Custo** | Percentuais que impactam diretamente cada venda, como impostos, taxas de intermediadores de pagamento, comissões e provisão para inadimplência. |
+| **7. Pró-labore** | Remuneração definida para o empreendedor ou sócios, registrada como custo fixo do negócio para evitar retiradas desordenadas do caixa empresarial. |
+| **8. Reserva de Emergência** | Parcela de recursos mantida pela empresa para lidar com imprevistos, instabilidades econômicas, queda de faturamento ou despesas inesperadas. |
 
-### 🤖 Prompts Reutilizáveis baseados em Engenharia de Prompts
+## 🤖 Prompts Reutilizáveis baseados em Engenharia de Prompts
 
-Para apoiar futuras revisões, desenhei um conjunto de prompts estratégicos baseados em técnicas formais de Engenharia de Prompts (como *Roleplay, Cadeia de Pensamento* e *Estruturação de Saída*), garantindo que a IA forneça respostas precisas e no formato ideal:
+Para apoiar futuras revisões, foi criado um conjunto de prompts estratégicos baseados em técnicas formais de Engenharia de Prompts, como definição de contexto, instrução clara, restrição de escopo, estruturação de saída, raciocínio estruturado e guardrails.
 
-#### 1. Prompt de Ação Prática (Técnicas: Contexto + Instrução Clara + Estrutura de Saída)
+Esses prompts podem ser reutilizados em novas consultas ao NotebookLM ou adaptados para outros temas de estudo.
+
+### 1. Prompt de Ação Prática  
+**Técnicas utilizadas:** Contexto + Instrução Clara + Estrutura de Saída
+
 **Objetivo:** Obter um formato de execução diária sem desvios de interpretação.
-> "Atue como um gestor financeiro sênior **[Contexto]**. Com base no método de precificação dos documentos fornecidos, crie um checklist para um profissional digital usar ao elaborar um orçamento **[Instruções Claras]**. Formate a saída como uma lista de caixas de seleção, limitando-se a 8 passos fundamentais **[Restrição e Estrutura de Saída]**."
 
-#### 2. Prompt de Simulação de Cenário (Técnicas: Cadeia de Pensamento / Chain of Thought)
-**Objetivo:** Compreender o impacto matemático solicitando que a IA apresente a lógica de cálculo antes da resposta final.
-> "Um profissional vendeu um serviço por R$ 5.000,00, mas esqueceu-se de embutir os 8% de Simples Nacional e 2% de inadimplência no cálculo do Markup **[Conteúdo Principal]**. Explique passo a passo o raciocínio matemático que demonstra como este erro destrói a lucratividade dele **[Cadeia de Pensamento]**. No final, apresente o valor exato do prejuízo **[Repetir Instruções no Final]**."
+> "Atue como um gestor financeiro sênior. Com base no método de precificação dos documentos fornecidos, crie um checklist para um profissional digital usar ao elaborar um orçamento. Formate a saída como uma lista de caixas de seleção, limitando-se a 8 passos fundamentais."
 
-#### 3. Prompt de Revisão Ativa (Técnicas: Few-Shot Learning + Guardrails)
-**Objetivo:** Gerar um teste rigoroso com formato padronizado.
-> "Crie 3 perguntas de escolha múltipla para testar os meus conhecimentos sobre Fluxo de Caixa, Capital de Giro e Lucratividade **[Instrução]**. 
-> Siga exatamente este formato para cada pergunta:
-> Pergunta: [Texto]
-> A) [Opção]
-> B) [Opção]
-> Resposta Certa: [Letra] - Justificativa: [Explicação curta] **[Exemplos / Formato de Saída]**.
-> Não utilize informações de fora do glossário fornecido nestes documentos **[Restrição / Guardrails]**."
+### 2. Prompt de Simulação de Cenário  
+**Técnica utilizada:** Raciocínio Estruturado
+
+**Objetivo:** Compreender o impacto matemático de um erro de precificação por meio de uma explicação organizada.
+
+> "Um profissional vendeu um serviço por R$ 5.000,00, mas esqueceu-se de embutir os 8% de Simples Nacional e 2% de inadimplência no cálculo do markup. Explique passo a passo a lógica de cálculo que demonstra como esse erro reduz a lucratividade dele. No final, apresente o valor estimado do impacto financeiro."
+
+### 3. Prompt de Revisão Ativa  
+**Técnicas utilizadas:** Few-Shot Learning + Guardrails + Estrutura de Saída
+
+**Objetivo:** Gerar um teste de revisão com formato padronizado.
+
+> "Crie 3 perguntas de escolha múltipla para testar meus conhecimentos sobre Fluxo de Caixa, Capital de Giro e Lucratividade.  
+> Siga exatamente este formato para cada pergunta:  
+> Pergunta: [Texto]  
+> A) [Opção]  
+> B) [Opção]  
+> Resposta Certa: [Letra] - Justificativa: [Explicação curta].  
+> Não utilize informações de fora do glossário fornecido nestes documentos."
+
+### 4. Prompt de Identificação de Lacunas  
+**Técnicas utilizadas:** Análise Crítica + Restrição de Fonte + Guardrails
+
+**Objetivo:** Verificar se a resposta está realmente fundamentada nas fontes ou se depende de conhecimento externo.
+
+> "Com base apenas nas fontes fornecidas, identifique quais conceitos financeiros são explicados com clareza nos documentos e quais conceitos aparecem de forma incompleta ou não são abordados. Separe a resposta em duas listas: 'Conceitos bem fundamentados nas fontes' e 'Lacunas identificadas'."
+
+### 5. Prompt de Resumo Executivo  
+**Técnicas utilizadas:** Roleplay + Síntese + Estrutura de Saída
+
+**Objetivo:** Transformar o conteúdo estudado em uma explicação curta e útil para tomada de decisão.
+
+> "Atue como um consultor financeiro explicando o tema para uma pessoa que está começando um negócio digital de serviços. Resuma os principais cuidados financeiros iniciais em até 5 tópicos, usando linguagem objetiva e exemplos simples."
+
+## ✅ Conclusão
+
+Este projeto demonstrou como o NotebookLM pode ser utilizado como ferramenta de aprendizagem ativa na organização de um caderno temático sobre planejamento financeiro inicial para negócios digitais.
+
+A partir da curadoria de fontes abertas, foi possível extrair conceitos relevantes sobre fluxo de caixa, capital de giro, pró-labore, precificação, markup, custos fixos, custos invisíveis e reserva de emergência.
+
+Além disso, os testes de prompts mostraram a importância de formular perguntas com escopo claro, restrições de fonte e formatos de saída bem definidos. As "cicatrizes" registradas durante o processo evidenciaram que a IA pode apoiar o estudo, mas suas respostas precisam ser analisadas criticamente, principalmente quando o tema solicitado ultrapassa os limites das fontes utilizadas.
+
+O resultado final é um miniguia de estudo reutilizável, com resumos estruturados, glossário técnico e prompts que podem apoiar futuras revisões sobre planejamento financeiro e uso de IA na aprendizagem.
